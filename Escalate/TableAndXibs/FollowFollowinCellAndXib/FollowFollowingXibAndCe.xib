@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SEGOEUI_0.TTF">
+            <string>SegoeUI</string>
+        </array>
+        <array key="seguisb_0.ttf">
+            <string>SegoeUI-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="105" id="KGk-i7-Jjw" customClass="FollowFollowingXibAndCe" customModule="Escalate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BWF-aP-qtz">
+                        <rect key="frame" x="15" y="25" width="55" height="55"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OCx-m8-UaU">
+                                <rect key="frame" x="3" y="3" width="49" height="49"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8W-SU-OCw">
+                                <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="M8W-SU-OCw" secondAttribute="trailing" id="1jn-kZ-7Cv"/>
+                            <constraint firstAttribute="trailing" secondItem="OCx-m8-UaU" secondAttribute="trailing" constant="3" id="2oU-cw-ayl"/>
+                            <constraint firstAttribute="bottom" secondItem="OCx-m8-UaU" secondAttribute="bottom" constant="3" id="5kN-Jg-yrW"/>
+                            <constraint firstAttribute="width" constant="55" id="7IT-Ho-Y1c"/>
+                            <constraint firstItem="M8W-SU-OCw" firstAttribute="top" secondItem="BWF-aP-qtz" secondAttribute="top" id="Bua-II-r2l"/>
+                            <constraint firstItem="OCx-m8-UaU" firstAttribute="leading" secondItem="BWF-aP-qtz" secondAttribute="leading" constant="3" id="QCp-iO-hic"/>
+                            <constraint firstItem="M8W-SU-OCw" firstAttribute="leading" secondItem="BWF-aP-qtz" secondAttribute="leading" id="Vil-VB-eCc"/>
+                            <constraint firstAttribute="bottom" secondItem="M8W-SU-OCw" secondAttribute="bottom" id="cYh-ds-GJi"/>
+                            <constraint firstAttribute="height" constant="55" id="p7g-5u-5n3"/>
+                            <constraint firstItem="OCx-m8-UaU" firstAttribute="top" secondItem="BWF-aP-qtz" secondAttribute="top" constant="3" id="zPy-tG-4lv"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.29803921570000003" green="0.15686274510000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daf-X6-OS0">
+                        <rect key="frame" x="268" y="39.5" width="93" height="26"/>
+                        <color key="backgroundColor" red="0.29803921570000003" green="0.15686274510000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="8PS-gY-EDp"/>
+                            <constraint firstAttribute="width" constant="93" id="Ztj-mZ-hH8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="13"/>
+                        <state key="normal" title="  Follow" image="search_follow">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Deg-06-M9J">
+                        <rect key="frame" x="78" y="25" width="30" height="32"/>
+                        <fontDescription key="fontDescription" name="SegoeUI-SemiBold" family="Segoe UI" pointSize="15"/>
+                        <state key="normal">
+                            <color key="titleColor" red="0.29803921570000003" green="0.15686274510000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oPm-en-27P">
+                        <rect key="frame" x="78" y="57" width="40" height="40"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8V-Oo-hR4">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <state key="normal" image="home_play_a"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWW-N2-Nlu">
+                                <rect key="frame" x="-78" y="0.0" width="0.0" height="40"/>
+                                <state key="normal" image="followers_unmute"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="1j5-Tb-XIf"/>
+                            <constraint firstAttribute="height" constant="40" id="47q-1G-02C"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Deg-06-M9J" firstAttribute="leading" secondItem="BWF-aP-qtz" secondAttribute="trailing" constant="8" id="2El-ry-9VM"/>
+                    <constraint firstItem="BWF-aP-qtz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="4yQ-iV-htH"/>
+                    <constraint firstAttribute="trailing" secondItem="daf-X6-OS0" secondAttribute="trailing" constant="15" id="7JB-Vp-4HI"/>
+                    <constraint firstItem="BWF-aP-qtz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9AX-Ug-URA"/>
+                    <constraint firstItem="Deg-06-M9J" firstAttribute="top" secondItem="BWF-aP-qtz" secondAttribute="top" id="LED-na-TJ6"/>
+                    <constraint firstItem="BWF-aP-qtz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Z7L-PK-ZbW"/>
+                    <constraint firstItem="oPm-en-27P" firstAttribute="top" secondItem="Deg-06-M9J" secondAttribute="bottom" id="bza-qh-AFB"/>
+                    <constraint firstItem="daf-X6-OS0" firstAttribute="centerY" secondItem="BWF-aP-qtz" secondAttribute="centerY" id="myF-A1-07d"/>
+                    <constraint firstAttribute="bottom" secondItem="BWF-aP-qtz" secondAttribute="bottom" constant="24.5" id="nLX-S7-rh5"/>
+                    <constraint firstItem="oPm-en-27P" firstAttribute="leading" secondItem="BWF-aP-qtz" secondAttribute="trailing" constant="8" id="pPH-4G-iL2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnFollowRef" destination="daf-X6-OS0" id="a6A-UN-c5M"/>
+                <outlet property="btnFullName" destination="Deg-06-M9J" id="zVH-Qo-op6"/>
+                <outlet property="btnMuteUnmuteTapped" destination="wWW-N2-Nlu" id="lhg-8F-hGb"/>
+                <outlet property="btnOtherProfileRef" destination="M8W-SU-OCw" id="dMp-QV-a4B"/>
+                <outlet property="btnPlayBioRef" destination="E8V-Oo-hR4" id="lTk-Cm-12P"/>
+                <outlet property="imgView_user" destination="OCx-m8-UaU" id="3rL-BN-i91"/>
+            </connections>
+            <point key="canvasLocation" x="61" y="166.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="followers_unmute" width="22" height="22"/>
+        <image name="home_play_a" width="20" height="20"/>
+        <image name="search_follow" width="16" height="16"/>
+    </resources>
+</document>

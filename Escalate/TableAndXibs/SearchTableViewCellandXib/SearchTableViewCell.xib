@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SEGOEUI_0.TTF">
+            <string>SegoeUI</string>
+        </array>
+        <array key="seguisb_0.ttf">
+            <string>SegoeUI-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="105" id="NRH-M1-KTg" customClass="SearchTableViewCell" customModule="Escalate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NRH-M1-KTg" id="i9i-rz-mzB">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYC-PX-amm">
+                        <rect key="frame" x="15" y="25" width="55" height="55"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kSd-YK-4m9">
+                                <rect key="frame" x="3" y="3" width="49" height="49"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3a-Tz-72x">
+                                <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="HwS-A3-aH2"/>
+                            <constraint firstAttribute="trailing" secondItem="P3a-Tz-72x" secondAttribute="trailing" id="LyL-9Y-NaN"/>
+                            <constraint firstAttribute="bottom" secondItem="kSd-YK-4m9" secondAttribute="bottom" constant="3" id="RTo-vz-WPa"/>
+                            <constraint firstAttribute="height" constant="55" id="TuE-Mg-nff"/>
+                            <constraint firstAttribute="bottom" secondItem="P3a-Tz-72x" secondAttribute="bottom" id="UFx-fZ-pQL"/>
+                            <constraint firstItem="kSd-YK-4m9" firstAttribute="leading" secondItem="lYC-PX-amm" secondAttribute="leading" constant="3" id="WIT-Kf-nuh"/>
+                            <constraint firstItem="kSd-YK-4m9" firstAttribute="top" secondItem="lYC-PX-amm" secondAttribute="top" constant="3" id="ZiR-b3-YRK"/>
+                            <constraint firstItem="P3a-Tz-72x" firstAttribute="top" secondItem="lYC-PX-amm" secondAttribute="top" id="dyv-wP-hLW"/>
+                            <constraint firstAttribute="trailing" secondItem="kSd-YK-4m9" secondAttribute="trailing" constant="3" id="mOk-pL-AMs"/>
+                            <constraint firstItem="P3a-Tz-72x" firstAttribute="leading" secondItem="lYC-PX-amm" secondAttribute="leading" id="wzz-bh-6He"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.29803921570000003" green="0.15686274510000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkm-Lb-Z7O">
+                        <rect key="frame" x="261" y="25" width="100" height="26"/>
+                        <color key="backgroundColor" red="0.29803921570000003" green="0.15686274510000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="0KY-hh-Ypt"/>
+                            <constraint firstAttribute="height" constant="26" id="HDS-f8-Pmb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="13"/>
+                        <state key="normal" title="  Follow" image="search_follow">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GqM-NF-96E">
+                        <rect key="frame" x="78" y="25" width="30" height="32"/>
+                        <fontDescription key="fontDescription" name="SegoeUI-SemiBold" family="Segoe UI" pointSize="15"/>
+                        <state key="normal">
+                            <color key="titleColor" red="0.29803921570000003" green="0.15686274510000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPk-Fr-EYu">
+                        <rect key="frame" x="78" y="60" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="lYC-PX-amm" secondAttribute="bottom" constant="24.5" id="2qU-E7-lrF"/>
+                    <constraint firstAttribute="trailing" secondItem="Zkm-Lb-Z7O" secondAttribute="trailing" constant="15" id="6sJ-j7-eik"/>
+                    <constraint firstItem="lYC-PX-amm" firstAttribute="leading" secondItem="i9i-rz-mzB" secondAttribute="leading" constant="15" id="UNb-Ji-eeg"/>
+                    <constraint firstItem="GqM-NF-96E" firstAttribute="leading" secondItem="lYC-PX-amm" secondAttribute="trailing" constant="8" id="d6l-YU-B2i"/>
+                    <constraint firstItem="vPk-Fr-EYu" firstAttribute="top" secondItem="GqM-NF-96E" secondAttribute="bottom" constant="3" id="ebK-Cj-MU6"/>
+                    <constraint firstItem="vPk-Fr-EYu" firstAttribute="leading" secondItem="lYC-PX-amm" secondAttribute="trailing" constant="8" id="fIr-za-3pu"/>
+                    <constraint firstItem="GqM-NF-96E" firstAttribute="top" secondItem="lYC-PX-amm" secondAttribute="top" id="gxV-co-l0v"/>
+                    <constraint firstItem="lYC-PX-amm" firstAttribute="centerY" secondItem="i9i-rz-mzB" secondAttribute="centerY" id="iSO-Sp-r2D"/>
+                    <constraint firstItem="Zkm-Lb-Z7O" firstAttribute="top" secondItem="P3a-Tz-72x" secondAttribute="top" id="tOc-3Q-GJ4"/>
+                    <constraint firstItem="lYC-PX-amm" firstAttribute="top" secondItem="i9i-rz-mzB" secondAttribute="top" constant="25" id="uLS-nb-oPW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="vRs-FI-WY3"/>
+            <connections>
+                <outlet property="btnFollowRef" destination="Zkm-Lb-Z7O" id="5ND-yG-Jc2"/>
+                <outlet property="btnFullName" destination="GqM-NF-96E" id="Cng-IR-8fs"/>
+                <outlet property="btnOtherProfileRef" destination="P3a-Tz-72x" id="HNb-oR-RCR"/>
+                <outlet property="imgView_user" destination="kSd-YK-4m9" id="edK-T7-pS3"/>
+                <outlet property="lblUserName" destination="vPk-Fr-EYu" id="J0S-i5-AKO"/>
+            </connections>
+            <point key="canvasLocation" x="61" y="166.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="search_follow" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_Escalate {
+  umbrella header "Pods-Escalate-umbrella.h"
+
+  export *
+  module * { export * }
+}

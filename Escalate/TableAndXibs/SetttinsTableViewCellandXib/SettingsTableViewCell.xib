@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SEGOEUI_0.TTF">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SettingsTableViewCell" rowHeight="69" id="o02-S5-eeo" customClass="SettingsTableViewCell" customModule="Escalate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o02-S5-eeo" id="hRx-RE-NKM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="68.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscription Plans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdc-Bo-Jet">
+                        <rect key="frame" x="20" y="23" width="137" height="23"/>
+                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="17"/>
+                        <color key="textColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYS-O4-N63">
+                        <rect key="frame" x="278" y="0.0" width="42" height="68.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="Ivj-Cj-dIA"/>
+                            <constraint firstAttribute="height" constant="68.5" id="lAE-47-nUX"/>
+                        </constraints>
+                        <state key="normal" image="setting_arrow_forward"/>
+                    </button>
+                    <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qLU-Ht-AmE">
+                        <rect key="frame" x="261" y="19" width="51" height="31"/>
+                        <color key="onTintColor" red="0.29803921570000003" green="0.15686274510000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qLU-Ht-AmE" firstAttribute="centerY" secondItem="hRx-RE-NKM" secondAttribute="centerY" id="0eh-PV-zd1"/>
+                    <constraint firstAttribute="trailing" secondItem="qLU-Ht-AmE" secondAttribute="trailing" constant="10" id="8ya-ra-zoV"/>
+                    <constraint firstItem="zdc-Bo-Jet" firstAttribute="centerY" secondItem="hRx-RE-NKM" secondAttribute="centerY" id="FN8-I1-K92"/>
+                    <constraint firstAttribute="bottom" secondItem="eYS-O4-N63" secondAttribute="bottom" id="IQ7-8z-Ohh"/>
+                    <constraint firstItem="zdc-Bo-Jet" firstAttribute="leading" secondItem="hRx-RE-NKM" secondAttribute="leading" constant="20" id="R7g-ig-TfY"/>
+                    <constraint firstAttribute="trailing" secondItem="eYS-O4-N63" secondAttribute="trailing" id="b2v-hD-IJ5"/>
+                    <constraint firstItem="eYS-O4-N63" firstAttribute="top" secondItem="hRx-RE-NKM" secondAttribute="top" id="rAl-mI-Quw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="reN-Vf-Mre"/>
+            <connections>
+                <outlet property="btnSettingsTapped" destination="eYS-O4-N63" id="U6g-Sj-IBV"/>
+                <outlet property="lblSettingsName" destination="zdc-Bo-Jet" id="KPV-13-rXJ"/>
+                <outlet property="switchNotifications" destination="qLU-Ht-AmE" id="wtV-be-CZj"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="-47.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="setting_arrow_forward" width="9" height="16"/>
+    </resources>
+</document>

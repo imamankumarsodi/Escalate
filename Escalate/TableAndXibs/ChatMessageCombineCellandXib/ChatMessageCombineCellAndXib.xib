@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SEGOEUI_0.TTF">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="111" id="KGk-i7-Jjw" customClass="ChatMessageCombineCellAndXib" customModule="Escalate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="561" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="561" height="110.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_message_purple" translatesAutoresizingMaskIntoConstraints="NO" id="lQs-l4-byP">
+                        <rect key="frame" x="534" y="41.5" width="12" height="22"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Lj-bD-nvT">
+                        <rect key="frame" x="284" y="15" width="250" height="75"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8w-f1-sTx">
+                                <rect key="frame" x="5" y="3" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="KMC-VJ-CrJ"/>
+                                    <constraint firstAttribute="height" constant="40" id="akO-ba-6Id"/>
+                                </constraints>
+                                <state key="normal" image="chat_message_play_white"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saz-5e-ch1" customClass="SwiftSiriWaveformView" customModule="SwiftSiriWaveformView">
+                                <rect key="frame" x="48" y="13" width="163.5" height="20"/>
+                                <color key="backgroundColor" red="0.29411764709999999" green="0.14901960780000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="N8z-du-YTc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="frequency">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="idleAmplitude">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="density">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfWaves">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="amplitude">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="waveColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jP3-2v-Pwp">
+                                <rect key="frame" x="214.5" y="15" width="30" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="7Dh-LI-yWf"/>
+                                    <constraint firstAttribute="width" constant="30" id="awq-Ne-D0Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07:35pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUj-Rt-cp2">
+                                <rect key="frame" x="12" y="43" width="39" height="13.5"/>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.29411764709999999" green="0.14901960780000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hUj-Rt-cp2" firstAttribute="top" secondItem="V8w-f1-sTx" secondAttribute="bottom" id="3ja-EJ-ipb"/>
+                            <constraint firstItem="hUj-Rt-cp2" firstAttribute="leading" secondItem="8Lj-bD-nvT" secondAttribute="leading" constant="12" id="OdD-mR-D2H"/>
+                            <constraint firstItem="jP3-2v-Pwp" firstAttribute="leading" secondItem="saz-5e-ch1" secondAttribute="trailing" constant="3" id="PkS-WE-dx8"/>
+                            <constraint firstItem="saz-5e-ch1" firstAttribute="centerY" secondItem="V8w-f1-sTx" secondAttribute="centerY" id="UMn-FB-eAq"/>
+                            <constraint firstItem="jP3-2v-Pwp" firstAttribute="centerY" secondItem="V8w-f1-sTx" secondAttribute="centerY" id="XNp-N3-gKk"/>
+                            <constraint firstAttribute="trailing" secondItem="jP3-2v-Pwp" secondAttribute="trailing" constant="5.5" id="Xxj-De-s6D"/>
+                            <constraint firstItem="saz-5e-ch1" firstAttribute="leading" secondItem="V8w-f1-sTx" secondAttribute="trailing" constant="3" id="Y48-kt-sct"/>
+                            <constraint firstItem="V8w-f1-sTx" firstAttribute="top" secondItem="8Lj-bD-nvT" secondAttribute="top" constant="3" id="bJ9-dU-QKS"/>
+                            <constraint firstAttribute="height" constant="75" id="c9k-V1-WSX"/>
+                            <constraint firstItem="V8w-f1-sTx" firstAttribute="leading" secondItem="8Lj-bD-nvT" secondAttribute="leading" constant="5" id="nhy-PQ-6ow"/>
+                            <constraint firstAttribute="width" constant="250" id="opd-mu-Tb7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSE-dm-fQF">
+                        <rect key="frame" x="25" y="14.5" width="250" height="75"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qk4-Kr-RMi">
+                                <rect key="frame" x="5" y="3" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="0l8-J0-5UZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="jS4-tH-fDQ"/>
+                                </constraints>
+                                <state key="normal" image="chat_message_play_pur"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Gw-M5-0gL" customClass="SwiftSiriWaveformView" customModule="SwiftSiriWaveformView">
+                                <rect key="frame" x="48" y="13" width="163.5" height="20"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="5dk-d9-xzD"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="frequency">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="idleAmplitude">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="density">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfWaves">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="amplitude">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="waveColor">
+                                        <color key="value" red="0.29411764709999999" green="0.14901960780000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOz-O0-WVf">
+                                <rect key="frame" x="214.5" y="15" width="30" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="kgA-J0-qJw"/>
+                                    <constraint firstAttribute="height" constant="16" id="ojN-iw-zrI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="12"/>
+                                <color key="textColor" red="0.29411764709999999" green="0.14901960780000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07:35pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bxx-Gn-0sd">
+                                <rect key="frame" x="12" y="43" width="39" height="13.5"/>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="10"/>
+                                <color key="textColor" red="0.29411764709999999" green="0.14901960780000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qk4-Kr-RMi" firstAttribute="top" secondItem="hSE-dm-fQF" secondAttribute="top" constant="3" id="2CZ-BS-put"/>
+                            <constraint firstItem="Bxx-Gn-0sd" firstAttribute="leading" secondItem="hSE-dm-fQF" secondAttribute="leading" constant="12" id="BSI-oo-g9W"/>
+                            <constraint firstItem="fOz-O0-WVf" firstAttribute="centerY" secondItem="Qk4-Kr-RMi" secondAttribute="centerY" id="HEN-xL-eiv"/>
+                            <constraint firstAttribute="trailing" secondItem="fOz-O0-WVf" secondAttribute="trailing" constant="5.5" id="Ma2-pY-1Ps"/>
+                            <constraint firstAttribute="width" constant="250" id="SmU-ga-iEH"/>
+                            <constraint firstAttribute="height" constant="75" id="Yj1-bl-sVj"/>
+                            <constraint firstItem="6Gw-M5-0gL" firstAttribute="centerY" secondItem="Qk4-Kr-RMi" secondAttribute="centerY" id="dP1-A7-fFI"/>
+                            <constraint firstItem="6Gw-M5-0gL" firstAttribute="leading" secondItem="Qk4-Kr-RMi" secondAttribute="trailing" constant="3" id="lL5-Ek-Nld"/>
+                            <constraint firstItem="Qk4-Kr-RMi" firstAttribute="leading" secondItem="hSE-dm-fQF" secondAttribute="leading" constant="5" id="qtM-Oj-o0H"/>
+                            <constraint firstItem="fOz-O0-WVf" firstAttribute="leading" secondItem="6Gw-M5-0gL" secondAttribute="trailing" constant="3" id="qzh-fi-Pgy"/>
+                            <constraint firstItem="Bxx-Gn-0sd" firstAttribute="top" secondItem="Qk4-Kr-RMi" secondAttribute="bottom" id="t3e-hZ-y3b"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_message_grey" translatesAutoresizingMaskIntoConstraints="NO" id="jd8-8G-PUb">
+                        <rect key="frame" x="15" y="41.5" width="12" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="5l9-Mb-mvq"/>
+                            <constraint firstAttribute="width" constant="12" id="ZCs-P4-AlI"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="8Lj-bD-nvT" secondAttribute="bottom" constant="15" id="61R-6D-9on"/>
+                    <constraint firstItem="8Lj-bD-nvT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9rj-Xa-Vxn"/>
+                    <constraint firstItem="8Lj-bD-nvT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="FIB-ri-lyf"/>
+                    <constraint firstItem="jd8-8G-PUb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="JE9-hS-I6X"/>
+                    <constraint firstItem="jd8-8G-PUb" firstAttribute="centerY" secondItem="hSE-dm-fQF" secondAttribute="centerY" id="NDE-4Q-lvd"/>
+                    <constraint firstAttribute="trailing" secondItem="lQs-l4-byP" secondAttribute="trailing" constant="15" id="TZq-qw-aiZ"/>
+                    <constraint firstItem="lQs-l4-byP" firstAttribute="centerY" secondItem="8Lj-bD-nvT" secondAttribute="centerY" id="Z8w-h8-T0H"/>
+                    <constraint firstItem="hSE-dm-fQF" firstAttribute="leading" secondItem="jd8-8G-PUb" secondAttribute="trailing" constant="-2" id="oIN-hB-SLN"/>
+                    <constraint firstItem="lQs-l4-byP" firstAttribute="leading" secondItem="8Lj-bD-nvT" secondAttribute="trailing" id="wV7-Cz-PMR"/>
+                    <constraint firstItem="jd8-8G-PUb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="yoP-Dc-clW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="audioViewP" destination="saz-5e-ch1" id="7GA-Dx-FnD"/>
+                <outlet property="audioViewW" destination="6Gw-M5-0gL" id="ND8-J3-QaE"/>
+                <outlet property="btnPlayPausedRefP" destination="V8w-f1-sTx" id="KDC-Eo-SDX"/>
+                <outlet property="btnPlayPausedRefW" destination="Qk4-Kr-RMi" id="wM2-iA-Yon"/>
+                <outlet property="imgCornerP" destination="lQs-l4-byP" id="Ecp-YR-Sq8"/>
+                <outlet property="imgCornerW" destination="jd8-8G-PUb" id="UuC-tx-Kvb"/>
+                <outlet property="lblTimeP" destination="hUj-Rt-cp2" id="Rdq-ip-yOx"/>
+                <outlet property="lblTimeW" destination="Bxx-Gn-0sd" id="X5x-4t-YeU"/>
+                <outlet property="lblTotalTimerP" destination="jP3-2v-Pwp" id="3qj-C1-K1m"/>
+                <outlet property="lblTotalTimerW" destination="fOz-O0-WVf" id="ZNg-zU-4xb"/>
+                <outlet property="viewPurple" destination="8Lj-bD-nvT" id="PGk-HJ-7gS"/>
+                <outlet property="viewWhite" destination="hSE-dm-fQF" id="Msn-Jd-tyq"/>
+            </connections>
+            <point key="canvasLocation" x="72.5" y="135.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat_message_grey" width="12" height="22"/>
+        <image name="chat_message_play_pur" width="20" height="20"/>
+        <image name="chat_message_play_white" width="20" height="20"/>
+        <image name="chat_message_purple" width="12" height="22"/>
+    </resources>
+</document>
